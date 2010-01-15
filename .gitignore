@@ -17,3 +17,6 @@ elim/
 session*
 tramp
 \#*
+
+elpa/*
+!elpa/package.el
