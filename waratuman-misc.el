@@ -12,7 +12,6 @@
 (set-keyboard-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
-(setq-default auto-fill-function 'do-auto-fill)
 (setq visible-bell t
       echo-keystrokes 0.1
       font-lock-maximum-decoration t
