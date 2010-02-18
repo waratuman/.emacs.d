@@ -5,3 +5,7 @@
 (setq erlang-root-dir "/usr/local/lib/erlang/lib")
 (add-to-list 'exec-path "/usr/local/lib/erlang/bin")
 (require 'erlang-start)
+
+;; Swank clojure
+(custom-set-variables
+ '(swank-clojure-extra-vm-args '("-server" "-Xmx1024M" "-XX:+UseCompressedOops" "-XX:+UseConcMarkSweepGC")))

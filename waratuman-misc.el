@@ -24,6 +24,7 @@
       line-number-mode t
       column-number-mode t
       truncate-partial-width-windows nil
+      default-truncate-lines t
       uniquify-buffer-name-style 'forward
       whitespace-style '(trailing lines space-before-tab
                                   indentation space-after-tab)
@@ -67,6 +68,9 @@
  
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 (add-hook 'text-mode-hook 'turn-on-flyspell)
+
+(add-hook 'clojure-mode-hook 'turn-on-paredit)
+(add-hook 'clojure-mode-hook 'turn-on-auto-fill)
  
 (defvar coding-hook nil
   "Hook that gets run on activation of any programming mode.")
